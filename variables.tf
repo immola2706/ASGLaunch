@@ -19,7 +19,7 @@ variable "my_public_ip" {
 	description = "My local system public IP ..." 
         default = "52.15.169.248/32"
 }
-variable "ami" {
+variable "aws_ami" {
 description = "amazon machine image"
 default = "ami-0e01ce4ee18447327"
 }
