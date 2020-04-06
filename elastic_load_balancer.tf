@@ -16,5 +16,3 @@ resource "aws_elb" "my_first_elb" {
         target = "HTTP:${var.server_port}/"
     }
 }
-
-

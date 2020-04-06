@@ -1,4 +1,4 @@
-resource "aws_security_group" "elb_sg" { 
+resource "aws_security_group" "elb_sg" {
 
     ingress {
         from_port = "${var.server_port}"
@@ -12,5 +12,5 @@ egress {
     to_port         = 0
     protocol        = "-1"
     cidr_blocks     = ["0.0.0.0/0"]
-  }    
+  }
 }
