@@ -14,7 +14,10 @@ try {
 				$class: 'AmazonWebServicesCredentialsBinding',
 				credentialsId: 'awsCredentials',
 			]]) {
-				sh '/usr/local/bin/terraform init'
+				ansiColor('xterm') {
+					sh '/usr/local/bin/terraform init'
+				}
+				
 			}
 		}
 	}
@@ -26,7 +29,9 @@ try {
 				$class: 'AmazonWebServicesCredentialsBinding',
 				credentialsId: 'awsCredentials',
 			]]) {
-				sh '/usr/local/bin/terraform validate'
+				ansiColor('xterm') {
+					sh '/usr/local/bin/terraform validate'
+				}
 			}
 		}
 	}
@@ -39,7 +44,9 @@ try {
 				$class: 'AmazonWebServicesCredentialsBinding',
 				credentialsId: 'awsCredentials',
 			]]) {
-				sh '/usr/local/bin/terraform plan'
+				ansiColor('xterm') {
+					sh '/usr/local/bin/terraform plan'
+				}
 			}
 		}
 	}
@@ -51,7 +58,9 @@ try {
 				$class: 'AmazonWebServicesCredentialsBinding',
 				credentialsId: 'awsCredentials',
 			]]) {
-				sh '/usr/local/bin/terraform apply -auto-approve'
+				ansiColor('xterm') {
+					sh '/usr/local/bin/terraform apply -auto-approve'
+				}
 			}
 		}
 	}
@@ -62,7 +71,9 @@ try {
 				$class: 'AmazonWebServicesCredentialsBinding',
 				credentialsId: 'awsCredentials',
 			 ]]) {
-				sh '/usr/local/bin/terraform show'
+				 ansiColor('xterm') {
+					sh '/usr/local/bin/terraform show'
+				}
 			}
 		}
 	}
