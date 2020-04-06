@@ -1,22 +1,22 @@
 variable "aws_region" {
-	description = " it will define the AWS region "
-	default = "us-east-2"
+        description = " it will define the AWS region "
+        default = "us-east-2"
 }
 variable "server_port" {
-	description = " http service listen on ths port "
-	default = "80"
+        description = " http service listen on ths port "
+        default = "80"
 }
 
 variable "ssh_port" {
-	description = "ssh request to server  "
-	default = "22"
+        description = "ssh request to server  "
+        default = "22"
 }
-variable "instance_type" { 
-	description = "AWS ec2 instance type"
-	default="t2.micro"
+variable "instance_type" {
+        description = "AWS ec2 instance type"
+        default="t2.micro"
 }
 variable "my_public_ip" {
-	description = "My local system public IP ..." 
+        description = "My local system public IP ..."
         default = "52.15.169.248/32"
 }
 variable "aws_ami" {
