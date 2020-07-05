@@ -1,6 +1,6 @@
 variable "aws_region" {
         description = " it will define the AWS region "
-        default = "us-east-2"
+        default = "us-east-1"
 }
 variable "server_port" {
         description = " http service listen on ths port "
@@ -17,13 +17,13 @@ variable "instance_type" {
 }
 variable "my_public_ip" {
         description = "My local system public IP ..."
-        default = "52.15.169.248/32"
+        default = "54.162.120.170/32"
 }
 variable "aws_ami" {
 description = "amazon machine image"
-default = "ami-0e01ce4ee18447327"
+default = "ami-09d95fab7fff3776c"
 }
 
 variable "azs" {
-default = [ "us-east-2a", "us-east-2b", "us-east-2c"]
+default = [ "us-east-1a", "us-east-1b", "us-east-1c"]
 }
