@@ -1,7 +1,3 @@
-provider "aws" {
-        region = var.aws_region
-        }
-
 resource "aws_launch_configuration" "my-first-launch-conf" {
 #name = "webserver-launch"
 image_id =      var.aws_ami
